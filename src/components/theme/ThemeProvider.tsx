@@ -6,6 +6,7 @@ type Theme = 'light' | 'dark';
 type Ctx = {
   theme: Theme;
   setTheme: (theme: Theme) => void;
+  toggle: () => void;
 };
 
 const ThemeContext = createContext<Ctx | undefined>(undefined);
