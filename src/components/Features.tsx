@@ -21,7 +21,7 @@ export default function Features() {
     ];
 
     return (
-        <section className="py-20 bg-white dark:bg-gray-900">
+        <section id="features" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600 dark:text-indigo-400">
