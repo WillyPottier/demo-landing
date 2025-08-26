@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Demo Landing
 
-## Getting Started
+Un projet **Next.js 14 + TailwindCSS** configuré avec **pnpm**, intégration **Husky + lint-staged + commitlint** pour appliquer les bonnes pratiques de code, et un workflow **CI GitHub Actions** qui vérifie lint, tests et build avant tout merge.
 
-First, run the development server:
+👉 Démo en ligne : [demo-landing sur Vercel](https://demo-landing-beryl.vercel.app/)
 
+---
+
+## 📂 Stack technique
+
+- **[Next.js 14](https://nextjs.org/)** — Framework React moderne (App Router)
+- **[TypeScript](https://www.typescriptlang.org/)** — Typage strict
+- **[TailwindCSS](https://tailwindcss.com/)** — Utilitaires CSS pour design rapide
+- **[pnpm](https://pnpm.io/)** — Gestionnaire de packages rapide & efficace
+- **[Husky](https://typicode.github.io/husky/)** + **lint-staged** + **commitlint** — Qualité de code via hooks Git
+- **[ESLint + Prettier](https://eslint.org/)** — Lint et formatage auto
+- **[GitHub Actions](https://docs.github.com/en/actions)** — CI (lint + type-check + build)
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone le repo :
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone git@github.com:WillyPottier/demo-landing.git
+cd demo-landing
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installez les dépendances :
+```bash
+pnpm install
+```
+## Lance le serveur de dev :
+```bash
+pnpm dev
+```
+## Build de prod :
+```bash
+pnpm build
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔑 Scripts disponibles
+```bash
+pnpm dev           # Lance le serveur Next.js (dev)
+pnpm build         # Build de production
+pnpm start         # Lance le serveur Next.js en mode prod
+pnpm lint          # Vérifie le code avec ESLint
+pnpm format        # Formatage avec Prettier
+pnpm type-check    # Vérifie les types TypeScript
+pnpm check         # Lint + format + type-check
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Utilisation
 
-## Learn More
+Lancez le projet en local puis ouvrez votre navigateur à l'adresse indiquée dans la console.
 
-To learn more about Next.js, take a look at the following resources:
+## Contribution
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Déploiement
 
-## Deploy on Vercel
+Le projet est déployé sur [Vercel](https://vercel.com/) avec intégration continue.
+Chaque PR déclenche un build automatique via GitHub Actions, validant lint + types + build.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✍️ Auteur : [@WillyPottier](https://github.com/WillyPottier)
