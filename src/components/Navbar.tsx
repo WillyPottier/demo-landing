@@ -1,6 +1,8 @@
+import ThemeToggle from "@/components/ThemeToggle";
+
 export default function Navbar() {
   return (
-    <nav className="w-full px-4 py-3 bg-gray-100 shadow">
+    <nav className="w-full px-4 py-3 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-5xl flex items-center justify-between">
           <span className="font-bold">Demo Landing 🚀</span>
           <ul className="flex gap-4 text-sm">
@@ -8,6 +10,7 @@ export default function Navbar() {
           <li><a href="#pricing" className="hover:underline">Pricing</a></li>
           <li><a href="#contact" className="hover:underline">Contact</a></li>
           </ul>
+            <ThemeToggle />
         </div>
     </nav>
   );
